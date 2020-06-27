@@ -146,8 +146,8 @@ class UserController extends Controller
          $request->validate([
             'txttitle' => 'required',
             'txtaddress' => 'required',
-            'txtprice' => 'required',
-            'txtarea' => 'required',
+            'txtprice' => 'required|min:4',
+            'txtarea' => 'required|min:1',
             'txtphone' => 'required',
             'txtdescription' => 'required',
             'txtaddress' => 'required',
@@ -155,13 +155,22 @@ class UserController extends Controller
          [  
             'txttitle.required' => 'Nhập tiêu đề bài đăng',
             'txtaddress.required' => 'Nhập địa chỉ phòng trọ',
-            'txtprice.required' => 'Nhập giá thuê phòng trọ',
-            'txtarea.required' => 'Nhập diện tích phòng trọ',
+            'txtprice.required' => 'Giá thuê phòng trọ không được rỗng',
+            'txtarea.required' => 'Diện tích phòng trọ không được rỗng',
             'txtphone.required' => 'Nhập SĐT chủ phòng trọ (cần liên hệ)',
             'txtdescription.required' => 'Nhập mô tả ngắn cho phòng trọ',
             'txtaddress.required' => 'Nhập hoặc chọn địa chỉ phòng trọ trên bản đồ'
          ]);
-        
+
+         $price = (float)($request->txtprice);
+         if ($price < 0){
+            return back()->withErrors('Giá thuê phòng trọ phải dương');
+         }
+         $area = (float)($request->txtarea);
+         if ($area < 0){
+            return back()->withErrors('Diện tích phải dương');
+         }
+         
          /* Check file */ 
          $json_img ="";
          if ($request->hasFile('hinhanh')){
