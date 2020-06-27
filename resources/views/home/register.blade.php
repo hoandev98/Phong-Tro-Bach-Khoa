@@ -43,6 +43,12 @@
 							</div>
 						</div>
 						<div class="form-group">
+							<label class="control-label col-sm-3" for="pwd">Số điện thoại:</label>
+							<div class="col-sm-9"> 
+								<input type="phone" class="form-control" name="txtphone" placeholder="vd: 0123456789 (không bắt buộc)">
+							</div>
+						</div>
+						<div class="form-group">
 							<label class="control-label col-sm-3" for="pwd">Email:</label>
 							<div class="col-sm-9"> 
 								<input type="email" class="form-control" name="txtmail" placeholder="Email của bạn">

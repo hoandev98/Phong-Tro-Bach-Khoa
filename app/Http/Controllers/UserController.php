@@ -21,7 +21,8 @@ class UserController extends Controller
    			'txtuser' => 'required|unique:users,username',
    			'txtmail' => 'required|email|unique:users,email',
    			'txtpass' => 'required|min:6',
-   			'txt-repass' => 'required|same:txtpass',
+            'txt-repass' => 'required|same:txtpass',
+            'txtphone'=> 'max:11',
    			'txtname' => 'required'
    		],[
    			'txtuser.required' => 'Vui lòng nhập tài khoản',
@@ -32,12 +33,14 @@ class UserController extends Controller
    			'txtpass.min' => 'Mật khẩu phải lớn hơn 6 kí tự',
    			'txt-repass.required' => 'Vui lòng nhập lại mật khẩu',
    			'txt-repass.same' => 'Mật khẩu nhập lại không trùng khớp',
-   			'txtname.required' => 'Nhập tên hiển thị'
+            'txtname.required' => 'Nhập tên hiển thị',
+            'txtphone.max'=>'số điện thoại không thể lớn hơn 11 số'
    		]);
    		$newuser = new User;
    		$newuser->username = $req->txtuser;
    		$newuser->name = $req->txtname;
-   		$newuser->password = bcrypt($req->txtpass);
+         $newuser->password = bcrypt($req->txtpass);
+         $newuser->phone = $req->txtphone;
    		$newuser->email = $req->txtmail;
    		$newuser->save();
    		return redirect('/user/register')->with('success','Đăng kí thành công');
