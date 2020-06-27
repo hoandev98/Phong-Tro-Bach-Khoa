@@ -29,18 +29,18 @@
 						<div class="form-group">
 							<label class="control-label col-sm-3">Tài khoản:</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="txtuser" placeholder="Tài khoản đăng nhập hệ thống">
+								<input type="text" class="form-control" name="txtuser" placeholder="Nhập tên tài khoản...">
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-3" for="pwd">Mật khẩu:</label>
 							<div class="col-sm-9"> 
-								<input type="password" class="form-control" name="txtpass" placeholder="Nhập mật khẩu">
+								<input type="password" class="form-control" name="txtpass" placeholder="Nhập mật khẩu...">
 							</div>
 						</div>
 						<div class="form-group"> 
 							<div class="col-sm-offset-5 col-sm-9">
-								<button type="submit" class="btn btn-primary">Đăng Nhập</button>
+								<button type="submit" class="btn btn-primary">ĐĂNG NHẬP</button>
 							</div>
 						</div>
 					</form><div class="gap"></div>
