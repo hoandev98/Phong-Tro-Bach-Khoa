@@ -4,10 +4,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-8">
-			<h1 class="entry-title entry-prop">Đăng tin Phòng trọ</h1>
+			<h1 class="entry-title entry-prop">ĐĂNG TIN PHÒNG TRỌ</h1>
 			<hr>
 			<div class="panel panel-default">
-				<div class="panel-heading">Thông tin bắt buộc*</div>
+				<div class="panel-heading" style="color:blue">Thông tin bắt buộc*</div>
 				<div class="panel-body">
 					<div class="gap"></div>
 					@if ($errors->any())
@@ -64,7 +64,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="usr">Quận/ Huyện:</label>
+                  <label for="usr">Quận/Huyện:</label>
                   <select class="selectpicker pull-right" data-live-search="true" name="iddistrict">
                     @foreach($district as $quan)
                     <option data-tokens="{{$quan->slug}}" value="{{ $quan->id }}">{{ $quan->name }}</option>
@@ -114,7 +114,7 @@
               </div>
             </div>
             
-            <button class="btn btn-primary">Đăng Tin</button>
+            <button class="btn btn-primary">ĐĂNG TIN</button>
           </form>
           @else
           <div class="alert bg-danger">
@@ -134,8 +134,7 @@
       <div class="col-md-8">
         <h4>Thông tin người đăng</h4>
         <strong> {{ Auth::user()->name }}</strong><br>
-        <i class="far fa-clock"></i> Ngày tham gia: {{ Auth::user()->created_at }}	
-
+        <i class="far fa-clock"></i> Ngày tham gia: {{ Auth::user()->created_at }}
       </div>
     </div>
   </div>
@@ -159,7 +158,7 @@
   var marker;
   function initialize() {
     var mapOptions = {
-      center: {lat: 16.070372, lng: 108.214388},
+      center: {lat: 10.762622, lng: 106.660172},
       zoom: 12
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -209,7 +208,7 @@
     var options = {
       map: map,
       zoom: 19,
-      position: new google.maps.LatLng(16.070372,108.214388),
+      position: new google.maps.LatLng(10.762622, 106.660172),
       content: content
     };
 
