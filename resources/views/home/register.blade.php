@@ -25,33 +25,39 @@
 					<form class="form-horizontal" method="POST" action="{{ route('user.register') }}" >
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="email">Tài khoản:</label>
+							<label class="control-label col-sm-3" for="email">Tài khoản*:</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="txtuser" placeholder="Tài khoản đăng nhập hệ thống">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="pwd">Mật khẩu:</label>
+							<label class="control-label col-sm-3" for="pwd" color="red">Mật khẩu*:</label>
 							<div class="col-sm-9"> 
 								<input type="password" class="form-control" name="txtpass" placeholder="Nhập mật khẩu">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="pwd">Nhập lại mật khẩu:</label>
+							<label class="control-label col-sm-3" for="pwd">Nhập lại mật khẩu*:</label>
 							<div class="col-sm-9"> 
 								<input type="password" class="form-control" name="txt-repass" placeholder="Nhập lại mật khẩu">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="pwd">Email:</label>
+							<label class="control-label col-sm-3" for="pwd">Email*:</label>
 							<div class="col-sm-9"> 
 								<input type="email" class="form-control" name="txtmail" placeholder="Email của bạn">
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="pwd">Tên hiển thị:</label>
+							<label class="control-label col-sm-3" for="pwd">Tên hiển thị*:</label>
 							<div class="col-sm-9"> 
 								<input type="text" class="form-control" name="txtname" placeholder="Tên hiển thị">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-3" for="pwd">Số điện thoại:</label>
+							<div class="col-sm-9"> 
+								<input type="text" class="form-control" name="txtphone" placeholder="vd:0964410362" min="1" max="5">
 							</div>
 						</div>
 						<div class="form-group"> 
@@ -59,6 +65,7 @@
 								<button type="submit" class="btn btn-primary">Đăng kí</button>
 							</div>
 						</div>
+						<h6>Phần có dấu (*) là bắt buộc!!! </h6>
 					</form>
 				</div>
 			</div>
