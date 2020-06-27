@@ -54,8 +54,8 @@ class UserController extends Controller
    			'txtpass' => 'required',
    			
    		],[
-   			'txtuser.required' => 'Vui lòng nhập tài khoản',
-   			'txtpass.required' => 'Vui lòng nhập mật khẩu'
+   			'txtuser.required' => 'Tài khoản trống. Vui lòng nhập tài khoản',
+   			'txtpass.required' => 'Mật khẩu trống. Vui lòng nhập mật khẩu'
    			
    		]);
    		if(Auth::attempt(['username'=>$req->txtuser,'password'=>$req->txtpass])){
