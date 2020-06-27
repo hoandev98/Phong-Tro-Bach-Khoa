@@ -56,14 +56,13 @@
 							<li><a href="user/logout">Thoát</a></li>
 						</ul>
 					</li>
-					
 				</ul>
 				
 				@else
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="btn-dangtin" href="user/dangtin"><i class="fas fa-edit"></i> Đăng tin ngay</a></li>
-					<li><a href="user/login"><i class="fas fa-user-circle"></i> Đăng Nhập</a></li>
-					<li><a href="user/register"><i class="fas fa-sign-in-alt"></i> Đăng Kí</a></li>
+					<li><a href="user/login"><i class="fas fa-user-circle"></i> Đăng nhập</a></li>
+					<li><a href="user/register"><i class="fas fa-sign-in-alt"></i> Đăng kí</a></li>
 				</ul>
 				@endif
 			</div>
@@ -77,18 +76,17 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="logo-footer">
-						<a href="/" title="Cổng thông tin số 1 về Dự án Bất động sản - Homedy.com">
+						<a href="/" title="Cổng thông tin tìm kiếm phòng trọ SG">
 							<img src="images/logo.png">                        
 						</a>
 						<div style="padding-top: 10px;">
-							<p>Dự án phát triển Website Đăng tin và Tìm kiếm Phòng trọ Sài gòn.</p>
-							<p>Sinh viên thực hiện: TeamOne.</p>
+							<p>Dự án phát triển Website Đăng tin và Tìm kiếm Phòng trọ Sài Gòn.</p>
+							<p>Nhóm sinh viên thực hiện: TeamOne.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</footer>
 	
 <script type="text/javascript" src="assets/toast/toastr.min.js"></script>
