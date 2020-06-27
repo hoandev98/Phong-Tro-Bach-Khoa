@@ -92,8 +92,8 @@ function time_elapsed_string($datetime, $full = false) {
 									@endif
 								</td>
 								<td>
-									<a href="phongtro/{{ $post->slug }}"><i class="fas fa-eye"></i> Xem</a>
-									<a href="motelroom/del/{{ $post->id }}" style="color:red"><i class="fas fa-trash-alt"></i> Xóa</a>
+									<a href="phongtro/{{ $post->slug }}"><i class="fas fa-tv"></i> Xem</a>
+									<a href="motelroom/del/{{ $post->id }}" onclick = "return confirm('Bạn có chắc muốn xóa bài đăng này!')" style="color:red"><i class="fas fa-times-circle"></i> Xóa</a>
 								</td>
 							</tr>
 							@endforeach

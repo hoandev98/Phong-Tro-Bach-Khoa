@@ -15,6 +15,7 @@ function limit_description($string){
 	}
 	return $string;
 }
+
 function time_elapsed_string($datetime, $full = false) {
 	$now = new DateTime;
 	$ago = new DateTime($datetime);
@@ -88,6 +89,7 @@ function time_elapsed_string($datetime, $full = false) {
 							<div style="color: #e74c3c"><i class="far fa-money-bill-alt"></i> Giá thuê: 
 								<b>{{ number_format($room->price) }} VNĐ</b></div>
 							</div>
+							
 						</div>
 
 					</div>

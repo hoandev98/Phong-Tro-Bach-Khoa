@@ -23,7 +23,7 @@ class UserController extends Controller
    			'txtpass' => 'required|min:6',
    			'txt-repass' => 'required|same:txtpass',
             'txtname' => 'required',
-            'txtphone' => 'max:10'
+            'txtphone' => 'max:11'
    		],[
    			'txtuser.required' => 'Vui lòng nhập tài khoản',
    			'txtuser.unique' => 'Tài khoản đã tồn tại trên hệ thống',
