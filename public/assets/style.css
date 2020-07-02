@@ -2,6 +2,11 @@ body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
+#slideImage img{
+    float: left !important;
+    width: 48% !important;
+    padding: 5px;
+}
 .btn-dangtin{
     background: #fff;
     padding: 5px!important  ;

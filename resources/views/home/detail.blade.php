@@ -100,7 +100,7 @@ function time_elapsed_string($datetime, $full = false) {
 			<?php 
 			$arrimg =  json_decode($motelroom->images,true);
 			?>
-			<center>
+			<center id="slideImage">
 			<!-- Slider Hình Ảnh -->
 			@foreach($arrimg as $img)
 				<img src="uploads/images/<?php echo $img; ?>" width="50%">
