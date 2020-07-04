@@ -117,11 +117,12 @@ class AdminController extends Controller
           'password' => 'min:3|max:32',
           'repassword' => 'same:password',
         ],[
-          'password.min' => 'password phải lớn hơn 3 và nhỏ hơn 32 kí tự',
-          'password.max' => 'password phải lớn hơn 3 và nhỏ hơn 32 kí tự',
+          'password.min' => 'Password phải lớn hơn 3 và nhỏ hơn 32 kí tự',
+          'password.max' => 'Password phải lớn hơn 3 và nhỏ hơn 32 kí tự',
           'repassword.same' => 'Nhập lại mật khẩu không đúng',
           'repassword.required' => 'Vui lòng nhập lại mật khẩu',
         ]);
+        #$user->password = bcrypt($request->password);
         $user->password = bcrypt($request->password);
       }
 
