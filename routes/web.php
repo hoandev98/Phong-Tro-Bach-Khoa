@@ -29,7 +29,6 @@ Route::get('/', function () {
     ]);
 });
 Route::get('category/{id}','MotelController@getMotelByCategoryId');
-Route::get('searc_list','MotelController@SearchMotelAjax');
 /* Admin */
 Route::get('admin/login','AdminController@getLogin');
 Route::post('admin/login','AdminController@postLogin')->name('admin.login');
