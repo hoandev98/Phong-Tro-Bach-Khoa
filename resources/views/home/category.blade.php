@@ -6,6 +6,7 @@ function limit_description($string){
 	if (strlen($string) > 100) {
 
 	    // truncate string
+		//$stringCut = substr($string, 0, 100);
 		$stringCut = substr($string, 0, 100);
 		$endPoint = strrpos($stringCut, ' ');
 
