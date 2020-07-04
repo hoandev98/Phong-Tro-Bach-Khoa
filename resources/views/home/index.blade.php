@@ -46,8 +46,7 @@ function time_elapsed_string($datetime, $full = false) {
 ?>
 <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
 	<div class="search-map hidden-xs" >
-		<div id="maps">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5047074473505!2d106.6555039505149!3d10.772602992286476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec17709146b%3A0x54a1658a0639d341!2zxJDhuqFpIEjhu41jIELDoWNoIEtob2E!5e0!3m2!1svi!2s!4v1593185201045!5m2!1svi!2s" width="1920" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div id="map"></div>
 		<div class="box-search">
 				<!-- <div id="flat"></div>
 					<div id="lng"></div> -->
@@ -224,7 +223,7 @@ function time_elapsed_string($datetime, $full = false) {
 								var map;
 								function initMap() {
 									map = new google.maps.Map(document.getElementById('map'), {
-										center: {lat: 16.070372, lng: 108.214388},
+										center: {lat: 10.762622, lng: 106.660172},
 										zoom: 15,
 										draggable: true
 									});

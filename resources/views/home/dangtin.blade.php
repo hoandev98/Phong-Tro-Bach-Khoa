@@ -209,7 +209,7 @@
     var options = {
       map: map,
       zoom: 19,
-      position: new google.maps.LatLng(16.070372,108.214388),
+      position: new google.maps.LatLng(10.762622, 106.660172),
       content: content
     };
 

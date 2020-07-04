@@ -101,7 +101,7 @@ function time_elapsed_string($datetime, $full = false) {
 		</div>
 		<!-- Footer -->
 		<div class="footer text-muted">
-			&copy; 2019. <a href="#">Project Phòng trọ Đà nẵng</a> by <a href="" target="_blank">Thành Trung</a>
+		&copy; 2020. <a href="#">Project Phòng trọ Hồ Chí Minh</a> by <a href="https://fb.com/hoanjr" target="_blank">Hoan Nguyen</a>
 		</div>
 		<!-- /footer -->
 	</div>
