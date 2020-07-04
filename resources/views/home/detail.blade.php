@@ -103,7 +103,7 @@ function time_elapsed_string($datetime, $full = false) {
 			<center>
 			<!-- Slider Hình Ảnh -->
 			@foreach($arrimg as $img)
-				<img src="uploads/images/<?php echo $img; ?>" width="50%">
+				<img style="width:49%;float:left;margin-right:5px"src="uploads/images/<?php echo $img; ?>">
 			@endforeach
 			</center>
 			<!-- END Slider Hình Ảnh -->		

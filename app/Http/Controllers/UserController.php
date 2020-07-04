@@ -162,6 +162,14 @@ class UserController extends Controller
             'txtaddress.required' => 'Nhập hoặc chọn địa chỉ phòng trọ trên bản đồ'
          ]);
         
+         $price = (float)($request->txtprice);
+         if ($price < 0){
+            return back()->withErrors('Nhập giá phòng sai rồi kìa !');
+         }
+         $area = (float)($request->txtarea);
+         if ($area < 0){
+            return back()->withErrors('Nhập diện tích sai kìa');
+         }
          /* Check file */ 
          $json_img ="";
          if ($request->hasFile('hinhanh')){
