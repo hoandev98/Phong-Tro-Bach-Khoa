@@ -83,7 +83,7 @@
 		<!-- /quick stats boxes -->
 		<!-- Footer -->
 		<div class="footer text-muted">
-			&copy; 2019. <a href="#">Project Phòng trọ Sài Gòn</a> by <a href="" target="_blank">TeamOne</a>
+			&copy; 2020. <a href="#">Project Phòng trọ Sài Gòn</a> by <a href="" target="_blank">TeamOne</a>
 		</div>
 		<!-- /footer -->
 	</div>
