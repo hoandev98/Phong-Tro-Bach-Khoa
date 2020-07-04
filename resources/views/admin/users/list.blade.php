@@ -39,7 +39,6 @@
 							<thead>
 								<tr class="bg-blue">
 									<th>ID</th>
-									
 									<th>Họ Tên</th>
 									<th>Email</th>
 									<th>Quyền</th>
@@ -51,7 +50,6 @@
 								@foreach($users as $tk)
 								<tr>
 									<td>{{$tk->id}}</td>
-									
 									<td>{{$tk->name}}</td>
 									<td>{{$tk->email}}</td>
 									
@@ -94,7 +92,7 @@
 		</div>
 		<!-- Footer -->
 		<div class="footer text-muted">
-			&copy; 2019. <a href="#">Project Phòng trọ Đà nẵng</a> by <a href="" target="_blank">Thành Trung</a>
+			&copy; 2020. <a href="#">Project Phòng trọ Sài Gòn</a> by <a href="" target="_blank">TeamOne</a>
 		</div>
 		<!-- /footer -->
 	</div>
